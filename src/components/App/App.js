@@ -17,8 +17,8 @@ import AboutPage from '../AboutPage/AboutPage';
 import UserPage from '../UserPage/UserPage';
 import InfoPage from '../InfoPage/InfoPage';
 import LandingPage from '../LandingPage/LandingPage';
-import LoginPage from '../LoginPage/LoginPage';
-import RegisterPage from '../RegisterPage/RegisterPage';
+// import LoginPage from '../LoginPage/LoginPage';
+// import RegisterPage from '../RegisterPage/RegisterPage';
 
 import './App.css';
 
@@ -65,7 +65,7 @@ class App extends Component {
             {/* When a value is supplied for the authRedirect prop the user will
             be redirected to the path supplied when logged in, otherwise they will
             be taken to the component and path supplied. */}
-            <ProtectedRoute
+            {/* <ProtectedRoute
               // with authRedirect:
               // - if logged in, redirects to "/user"
               // - else shows LoginPage at /login
@@ -73,8 +73,8 @@ class App extends Component {
               path="/login"
               component={LoginPage}
               authRedirect="/user"
-            />
-            <ProtectedRoute
+            /> */}
+            {/* <ProtectedRoute
               // with authRedirect:
               // - if logged in, redirects to "/user"
               // - else shows RegisterPage at "/registration"
@@ -82,7 +82,7 @@ class App extends Component {
               path="/registration"
               component={RegisterPage}
               authRedirect="/user"
-            />
+            /> */}
             <ProtectedRoute
               // with authRedirect:
               // - if logged in, redirects to "/user"
