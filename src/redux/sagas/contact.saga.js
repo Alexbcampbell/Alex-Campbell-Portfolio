@@ -3,11 +3,11 @@ import axios from 'axios';
 
 function postContact(action) {
   try {
-    const response = yield axios.post('/api/contact', action.payload);
+    const response = axios.post('/api/contact', action.payload);
     console.log(response.data);
   } catch (err) {
     console.log('ERROR SENDING CONTACT INFO', err);
-    yield put({ type: 'POST_FAILED' });
+    put({ type: 'POST_FAILED' });
   }
 }
 
