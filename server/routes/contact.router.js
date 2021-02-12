@@ -15,17 +15,20 @@ router.get('/', (req, res) => {
  */
 router.post('/', (req, res) => {
   // POST route code here
-  const firstName = req.body.firstName;
-  const lastName = req.body.lastName;
-  const email = req.body.email;
-  const phoneNumber = req.body.phoneNumber;
-  const comments = req.body.comments;
-
+  const newContact = req.body;
   const queryText = `INSERT INTO "contact" (firstName, lastName, email, phoneNumber, comments)
     VALUES ($1, $2, $3, $4, $5) RETURNING id`;
+  const queryValues = [
+    newContact.firstName,
+    newContact.lastName,
+    newContact.email,
+    newContact.phoneNumber,
+    newContact.comments,
+  ];
   pool
-    .query(queryText, [firstName, lastName, email, phoneNumber, comments])
+    .query(queryText, queryValues)
     .then((dbResponse) => {
+      console.log(dbResponse);
       res.sendStatus(201);
     })
     //   const transportConfig = {
@@ -61,7 +64,7 @@ router.post('/', (req, res) => {
     //   });
     // })
     .catch((err) => {
-      console.log('User registration failed: ', err);
+      console.log('POST_CONTACT FAILED ', err);
       res.sendStatus(500);
     });
 });
