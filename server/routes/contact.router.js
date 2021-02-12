@@ -26,38 +26,40 @@ router.post('/', (req, res) => {
   pool
     .query(queryText, [firstName, lastName, email, phoneNumber, comments])
     .then((dbResponse) => {
-      const transportConfig = {
-        service: 'gmail',
-        auth: {
-          user: process.env.MAILER_EMAIL,
-          pass: process.env.MAILER_EMAIL_PASS,
-        },
-      };
-
-      let transporter = nodemailer.createTransport(transportConfig);
-
-      let registerLinkBase = process.env.HOST_ENV;
-      const registerLink = `${registerLinkBase}/#/register/${tempRegId}`;
-
-      const mailOptions = {
-        from: process.env.MAILER_EMAIL,
-        to: process.env.MAILER_EMAIL,
-        subject: 'New Contact from Portfolio!',
-        html: `<div>
-        <h1>Welcome to Alex Campbell's Portfolio</h1>
-        <p>Please finalize registration</p>
-        <a href="${registerLink}" target="_blank">Continue</a>
-        </div>`,
-      };
-
-      transporter.sendMail(data, (err, info) => {
-        if (err != null) {
-          res.sendStatus(500);
-          return;
-        }
-        res.sendStatus(201);
-      });
+      res.sendStatus(201);
     })
+    //   const transportConfig = {
+    //     service: 'gmail',
+    //     auth: {
+    //       user: process.env.MAILER_EMAIL,
+    //       pass: process.env.MAILER_EMAIL_PASS,
+    //     },
+    //   };
+
+    //   let transporter = nodemailer.createTransport(transportConfig);
+
+    //   // let registerLinkBase = process.env.HOST_ENV;
+    //   // const registerLink = `${registerLinkBase}/#/register/${tempRegId}`;
+
+    //   const mailOptions = {
+    //     from: process.env.MAILER_EMAIL,
+    //     to: process.env.MAILER_EMAIL,
+    //     subject: 'New Contact from Portfolio!',
+    //     html: `<div>
+    //     <h1>Welcome to Alex Campbell's Portfolio</h1>
+    //     <p>Please finalize registration</p>
+    //     <a href="${registerLink}" target="_blank">Continue</a>
+    //     </div>`,
+    //   };
+
+    //   transporter.sendMail(data, (err, info) => {
+    //     if (err != null) {
+    //       res.sendStatus(500);
+    //       return;
+    //     }
+    //     res.sendStatus(201);
+    //   });
+    // })
     .catch((err) => {
       console.log('User registration failed: ', err);
       res.sendStatus(500);
