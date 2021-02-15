@@ -56,7 +56,7 @@ class ContactPage extends Component {
       text: 'You will be contacted as soon as possible!',
       icon: 'success',
     });
-    this.props.history.push('/contact');
+    this.props.history.push('/home');
   };
 
   render() {
