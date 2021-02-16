@@ -3,13 +3,14 @@ Grid
 -------------------------------------------------------------------------------- */
 
 body {
-  background-image: url('./garrett-sears-rXVFCA3fQ4I-unsplash.jpg');
+  background-image: url('./sirisvisual-Qh6yUFl7P5E-unsplash.jpg');
+  /* background-image: url('./garrett-sears-rXVFCA3fQ4I-unsplash.jpg'); */
   /* background-image: url('./benjamin-voros-phIFdC6lA4E-unsplash.jpg'); */
   background-size: 1920px, auto;
 }
 
 .profile {
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 8px;
 }
 
@@ -19,8 +20,8 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 200px 600px;
-  grid-template-rows: 200px 500px;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 350px 350px;
   grid-gap: 20px;
 }
 

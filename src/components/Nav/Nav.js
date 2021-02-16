@@ -5,15 +5,15 @@ import './Nav.css';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 
 const Nav = (props) => {
-  let loginLinkData = {
-    path: '/login',
-    text: 'Login / Register',
-  };
+  // let loginLinkData = {
+  //   path: '/login',
+  //   text: 'Login / Register',
+  // };
 
-  if (props.store.user.id != null) {
-    loginLinkData.path = '/user';
-    loginLinkData.text = 'Home';
-  }
+  // if (props.store.user.id != null) {
+  //   loginLinkData.path = '/user';
+  //   loginLinkData.text = 'Home';
+  // }
 
   return (
     <div className="nav">
