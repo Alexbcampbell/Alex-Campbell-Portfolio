@@ -9,12 +9,17 @@ body {
 }
 
 .profile {
+  opacity: 0.8;
   border-radius: 8px;
 }
 
+.item-bio {
+  color: white;
+  font-size: 22px;
+}
 .container {
   display: grid;
-  grid-template-columns: 200px 400px;
+  grid-template-columns: 200px 600px;
   grid-template-rows: 200px 500px;
   grid-gap: 20px;
 }

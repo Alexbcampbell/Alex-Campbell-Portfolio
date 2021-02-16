@@ -71,7 +71,7 @@ class ContactPage extends Component {
                     variant="h4"
                     component="h2"
                     gutterBottom
-                    className="h4"
+                    style={{ color: 'white' }}
                   >
                     Leave your contact information and I will get back to you as
                     soon as possible!
