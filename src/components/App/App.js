@@ -13,11 +13,11 @@ import Footer from '../Footer/Footer';
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
-import AboutPage from '../../Pages/AboutPage/AboutPage';
 import UserPage from '../../Pages/UserPage/UserPage';
 import InfoPage from '../../Pages/InfoPage/InfoPage';
 import LandingPage from '../../Pages/LandingPage/LandingPage';
 import ContactPage from '../../Pages/ContactPage/ContactPage';
+import PortfolioPage from '../../Pages/PortfolioPage/PortfolioPage';
 
 import './App.css';
 
@@ -40,7 +40,7 @@ class App extends Component {
               // shows AboutPage at all times (logged in or not)
               exact
               path="/about"
-              component={AboutPage}
+              component={PortfolioPage}
             />
 
             <Route
