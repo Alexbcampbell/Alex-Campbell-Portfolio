@@ -2,6 +2,15 @@
 Grid
 -------------------------------------------------------------------------------- */
 
+body {
+  background-image: url('./benjamin-voros-phIFdC6lA4E-unsplash.jpg');
+  background-size: 1900px, auto;
+}
+
+.profile {
+  border-radius: 8px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 200px 400px;
