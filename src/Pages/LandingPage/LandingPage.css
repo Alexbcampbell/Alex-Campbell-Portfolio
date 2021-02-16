@@ -3,8 +3,9 @@ Grid
 -------------------------------------------------------------------------------- */
 
 body {
-  background-image: url('./benjamin-voros-phIFdC6lA4E-unsplash.jpg');
-  background-size: 1900px, auto;
+  background-image: url('./garrett-sears-rXVFCA3fQ4I-unsplash.jpg');
+  /* background-image: url('./benjamin-voros-phIFdC6lA4E-unsplash.jpg'); */
+  background-size: 1920px, auto;
 }
 
 .profile {
