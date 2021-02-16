@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/:id', (req, res) => {
   // GET route code here
   pool
-    .query(`SELECT * FROM "portfolio" ORDER BY "id" ASC;`)
+    .query(`SELECT * FROM "portfolio" ORDER BY "id" ASC;`, req.params.id)
     .then((dbResponse) => {
       res.send(dbResponse.rows);
     })
