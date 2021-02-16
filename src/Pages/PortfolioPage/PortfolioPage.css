@@ -1,3 +1,8 @@
+body {
+  background-image: url('./sirisvisual-Qh6yUFl7P5E-unsplash.jpg');
+  background-size: auto;
+}
+
 .container-portfolio {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
