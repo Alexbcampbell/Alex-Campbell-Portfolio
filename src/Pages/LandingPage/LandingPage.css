@@ -2,6 +2,13 @@
 Grid
 -------------------------------------------------------------------------------- */
 
+.container {
+  display: grid;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 200px 500px;
+  grid-gap: 20px;
+}
+
 .grid {
   display: flex;
   flex: 0 1 auto;
