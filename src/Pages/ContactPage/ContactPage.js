@@ -67,14 +67,19 @@ class ContactPage extends Component {
             <Grid container justify="center">
               <Grid item>
                 <form className="opacity" onSubmit={this.addNewContact}>
-                  <Typography variant="h4" component="h2" gutterBottom>
+                  <Typography
+                    variant="h4"
+                    component="h2"
+                    gutterBottom
+                    className="h4"
+                  >
                     Leave your contact information and I will get back to you as
                     soon as possible!
                   </Typography>
                   <Grid container spacing={3}>
                     <Grid item xs={3}>
                       <TextField
-                        style={{ backgroundColor: 'white' }}
+                        style={{ backgroundColor: 'gray' }}
                         fullWidth
                         // multiline
                         // rows={4}
@@ -89,7 +94,7 @@ class ContactPage extends Component {
                     </Grid>
                     <Grid item xs={3}>
                       <TextField
-                        style={{ backgroundColor: 'white' }}
+                        style={{ backgroundColor: 'gray' }}
                         fullWidth
                         // multiline
                         // rows={4}
@@ -105,7 +110,7 @@ class ContactPage extends Component {
                     <Grid container spacing={3}>
                       <Grid item xs={3}>
                         <TextField
-                          style={{ backgroundColor: 'white' }}
+                          style={{ backgroundColor: 'gray' }}
                           fullWidth
                           // multiline
                           // rows={4}
@@ -120,7 +125,7 @@ class ContactPage extends Component {
                       </Grid>
                       <Grid item xs={3}>
                         <TextField
-                          style={{ backgroundColor: 'white' }}
+                          style={{ backgroundColor: 'gray' }}
                           fullWidth
                           // multiline
                           // rows={4}
@@ -136,7 +141,7 @@ class ContactPage extends Component {
                     </Grid>
                     <Grid item xs={12}>
                       <TextField
-                        style={{ backgroundColor: 'white' }}
+                        style={{ backgroundColor: 'gray' }}
                         fullWidth
                         multiline
                         rows={2}
