@@ -9,17 +9,17 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="container">
-        <div class="item">
-          <img class="profile" src={alexPic} alt="black and white" />
+        <div className="item">
+          <img className="profile" src={alexPic} alt="black and white" />
         </div>
-        <div class="item-bio">
+        <div className="item-bio">
           <p>
             {' '}
             Full Stack Software Engineer | Learning to code for a better
             tomorrow.
           </p>
         </div>
-        <div class="item">
+        <div className="item">
           <div>
             <a href="https://www.linkedin.com/in/alexb-campbell/">LinkedIn</a>
           </div>
