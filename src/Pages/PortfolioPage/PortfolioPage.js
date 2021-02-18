@@ -13,6 +13,7 @@ import {
 } from '@material-ui/core';
 
 import './PortfolioPage.css';
+import ProjectListItem from '../../components/ProjectListItem/ProjectListItem';
 
 // Basic class component structure for React with default state
 // value setup. When making a new component be sure to replace
@@ -22,7 +23,6 @@ class PortfolioPage extends Component {
   componentDidMount() {
     this.props.dispatch({
       type: 'GET_PROJECT',
-      payload: this.props.store.projects,
     });
   }
 
@@ -30,39 +30,25 @@ class PortfolioPage extends Component {
     const projectArray = this.props.store.portfolioReducer.map(
       (item, index) => {
         return (
-          <div class="item-port">
-            <Card className="card">
-              <CardHeader
-                avatar={<Avatar>P</Avatar>}
-                title={item.projectName}
-              />
-              <CardContent>
-                <CardMedia
-                  className={this.props.classes.cardMedia}
-                  image={item.photo}
-                />
-              </CardContent>
-
-              {/* <CardActions>
-          <Grid container justify="space-evenly">
-            <Grid item>
-              <Button
-                variant="contained"
-                size="small"
-                color="secondary"
-                onClick={this.handleClickDetails}
-              >
-                Details
-              </Button>
-            </Grid>
+          <Grid item sm={12} md={4} lg={4}>
+            <ProjectListItem
+              id={item.id}
+              key={index}
+              project={item}
+              index={index}
+              {...this.props}
+            />
           </Grid>
-        </CardActions> */}
-            </Card>
-          </div>
         );
       }
     );
-    return <div className="container-portfolio">{projectArray}</div>;
+    return (
+      <div className="container-portfolio">
+        <Grid container spacing={3}>
+          {projectArray}
+        </Grid>
+      </div>
+    );
   }
 }
 

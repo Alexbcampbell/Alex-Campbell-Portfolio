@@ -29,69 +29,56 @@ const muiStyles = (theme) =>
     },
   });
 
-class EventListItem extends Component {
+class ProjectListItem extends Component {
   componentDidMount() {
     this.props.dispatch({
-      type: 'GET_EVENTS',
-      payload: this.props.store.events,
+      type: 'GET_PROJECT',
+      payload: this.props.store.project,
     });
   }
 
-  handleClickDetails = (event) => {
-    this.props.dispatch({
-      type: 'GET_EVENT_DETAILS',
-      payload: this.props.id,
-    });
-    this.props.history.push(`/event/details/${this.props.event.event_id}`);
-  };
+  // handleClickDetails = (event) => {
+  //   this.props.dispatch({
+  //     type: 'GET_EVENT_DETAILS',
+  //     payload: this.props.id,
+  //   });
+  //   this.props.history.push(`/event/details/${this.props.event.event_id}`);
+  // };
 
   // const useStyles = makeStyles({
   //   card: { maxWidth: 345, },
   //   media: { height: 140, }, });
 
   render() {
-    const { event } = this.props;
-    const date = DateTime.fromISO(event.event_start);
-    const humanDate = date.toLocaleString(DateTime.DATETIME_MED);
+    const { project } = this.props;
+
     return (
-      <Card className="card">
-        {event.event_type === 1 ? (
-          <CardHeader
-            avatar={<Avatar>C</Avatar>}
-            title={event.event_title}
-            subheader={humanDate}
-          />
-        ) : (
-          <CardHeader
-            avatar={<Avatar>E</Avatar>}
-            title={event.event_title}
-            subheader={humanDate}
-          />
-        )}
+      <div class="item-port">
+        <Card className="card">
+          <CardHeader avatar={<Avatar>P</Avatar>} title={project.projectName} />
+          <CardContent>
+            <CardMedia
+              className={this.props.classes.cardMedia}
+              image={project.photo}
+            />
+          </CardContent>
 
-        <CardContent>
-          <CardMedia
-            className={this.props.classes.cardMedia}
-            image={event.link_url}
-            title="course"
-          />
-        </CardContent>
-
-        <CardActions>
-          <Grid container justify="space-evenly">
-            <Grid item>
-              <Button
-                variant="contained"
-                size="small"
-                color="secondary"
-                onClick={this.handleClickDetails}
-              >
-                Details
-              </Button>
-            </Grid>
+          {/* <CardActions>
+        <Grid container justify="space-evenly">
+          <Grid item>
+            <Button
+              variant="contained"
+              size="small"
+              color="secondary"
+              onClick={this.handleClickDetails}
+            >
+              Details
+            </Button>
           </Grid>
-        </CardActions>
-      </Card>
+        </Grid>
+      </CardActions> */}
+        </Card>
+      </div>
     );
   }
 }
