@@ -23,7 +23,6 @@ class PortfolioPage extends Component {
   componentDidMount() {
     this.props.dispatch({
       type: 'GET_PROJECT',
-      payload: this.props.store.project,
     });
   }
 

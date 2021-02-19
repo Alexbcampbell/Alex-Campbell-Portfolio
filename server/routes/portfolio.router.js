@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
   pool
     .query(`SELECT * FROM "portfolio" ORDER BY "id" ASC;`)
     .then((dbResponse) => {
+      console.log('LOOKY HERE', dbResponse.rows);
       res.send(dbResponse.rows);
     })
     .catch((err) => {

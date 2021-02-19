@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function getProject(action) {
   try {
-    const response = axios.get(`/api/portfolio`, action.payload);
+    const response = axios.get('/api/portfolio');
     put({
       type: 'SET_PROJECT',
       payload: response.data,
