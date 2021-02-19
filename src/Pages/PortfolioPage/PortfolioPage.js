@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import {
-  Card,
-  CardMedia,
-  CardActions,
-  CardContent,
-  Button,
+  // Card,
+  // CardMedia,
+  // CardActions,
+  // CardContent,
+  // Button,
   Grid,
-  CardHeader,
-  Avatar,
+  // CardHeader,
+  // Avatar,
 } from '@material-ui/core';
 
 import './PortfolioPage.css';
@@ -23,6 +23,7 @@ class PortfolioPage extends Component {
   componentDidMount() {
     this.props.dispatch({
       type: 'GET_PROJECT',
+      payload: this.props.store.project,
     });
   }
 

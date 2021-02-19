@@ -5,10 +5,10 @@ const router = express.Router();
 /**
  * GET PROJECT BY ID
  */
-router.get('/:id', (req, res) => {
+router.get('/', (req, res) => {
   // GET route code here
   pool
-    .query(`SELECT * FROM "portfolio" ORDER BY "id" ASC;`, req.params.id)
+    .query(`SELECT * FROM "portfolio" ORDER BY "id" ASC;`)
     .then((dbResponse) => {
       res.send(dbResponse.rows);
     })

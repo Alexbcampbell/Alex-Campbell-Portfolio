@@ -13,8 +13,8 @@ import Footer from '../Footer/Footer';
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
-import UserPage from '../../Pages/UserPage/UserPage';
-import InfoPage from '../../Pages/InfoPage/InfoPage';
+// import UserPage from '../../Pages/UserPage/UserPage';
+// import InfoPage from '../../Pages/InfoPage/InfoPage';
 import LandingPage from '../../Pages/LandingPage/LandingPage';
 import ContactPage from '../../Pages/ContactPage/ContactPage';
 import PortfolioPage from '../../Pages/PortfolioPage/PortfolioPage';

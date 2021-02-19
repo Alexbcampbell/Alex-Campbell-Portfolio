@@ -5,10 +5,10 @@ import { withRouter } from 'react-router-dom';
 import {
   Card,
   CardMedia,
-  CardActions,
+  // CardActions,
   CardContent,
-  Button,
-  Grid,
+  // Button,
+  // Grid,
   CardHeader,
   Avatar,
 } from '@material-ui/core';
