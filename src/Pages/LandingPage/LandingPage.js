@@ -26,6 +26,12 @@ class LandingPage extends Component {
           <div>
             <a href="https://github.com/Alexbcampbell">Github</a>
           </div>
+          <div>
+            <a href="alexbe.campbell@gmail.com">E-mail</a>
+          </div>
+          <div>
+            <span>913-710-9196</span>
+          </div>
         </div>
       </div>
     );

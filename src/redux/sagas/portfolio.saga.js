@@ -1,9 +1,9 @@
-import { put, takeLatest } from 'redux-saga/effects';
 import axios from 'axios';
+import { put, takeLatest } from 'redux-saga/effects';
 
 function getProject(action) {
   try {
-    const response = axios.get('/api/portfolio');
+    const response = axios.get('/api/portfolio', action.payload);
     put({
       type: 'SET_PROJECT',
       payload: response.data,
