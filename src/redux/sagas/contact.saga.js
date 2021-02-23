@@ -4,7 +4,7 @@ import axios from 'axios';
 function postContact(action) {
   try {
     const response = axios.post('/api/contact', action.payload);
-    console.log(response.data);
+    console.log('LOOK HERE FOR POST CONTACT', response.data);
   } catch (err) {
     console.log('ERROR SENDING CONTACT INFO', err);
     put({ type: 'POST_FAILED' });
