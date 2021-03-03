@@ -36,7 +36,6 @@ class PortfolioPage extends Component {
               key={index}
               project={item}
               index={index}
-              {...this.props}
             />
           </Grid>
         );
