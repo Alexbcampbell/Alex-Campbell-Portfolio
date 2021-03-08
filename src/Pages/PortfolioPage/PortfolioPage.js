@@ -14,7 +14,7 @@ import {
 
 import './PortfolioPage.css';
 import ProjectListItem from '../../components/ProjectListItem/ProjectListItem';
-const soloScreen = require('./Screen Shot 2021-01-31 at 7.04.02 PM.png');
+const soloScreen = require('./soloScreenHome.png');
 
 // Basic class component structure for React with default state
 // value setup. When making a new component be sure to replace
@@ -50,6 +50,21 @@ class PortfolioPage extends Component {
           <CardHeader
             avatar={<Avatar>C</Avatar>}
             title="Covid Restaurant Reviews"
+          />
+          <CardContent>
+            <CardMedia image={soloScreen} />
+          </CardContent>
+        </Card>
+        <Card className="card">
+          <CardHeader avatar={<Avatar>W</Avatar>} title="WeVolunteerKC" />
+          <CardContent>
+            <CardMedia image={soloScreen} />
+          </CardContent>
+        </Card>
+        <Card className="card">
+          <CardHeader
+            avatar={<Avatar>J</Avatar>}
+            title="Wes Bos' 30 Day JavaScript Challenge"
           />
           <CardContent>
             <CardMedia image={soloScreen} />
