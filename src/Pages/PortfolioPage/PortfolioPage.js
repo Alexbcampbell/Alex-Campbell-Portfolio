@@ -47,25 +47,19 @@ class PortfolioPage extends Component {
     return (
       <div className="container-portfolio">
         <Card className="card">
-          <CardHeader
-            avatar={<Avatar>C</Avatar>}
-            title="Covid Restaurant Reviews"
-          />
+          <CardHeader title="Covid Restaurant Reviews" />
           <CardContent>
             <CardMedia image={soloScreen} />
           </CardContent>
         </Card>
         <Card className="card">
-          <CardHeader avatar={<Avatar>W</Avatar>} title="WeVolunteerKC" />
+          <CardHeader title="WeVolunteerKC" />
           <CardContent>
             <CardMedia image={soloScreen} />
           </CardContent>
         </Card>
         <Card className="card">
-          <CardHeader
-            avatar={<Avatar>J</Avatar>}
-            title="Wes Bos' 30 Day JavaScript Challenge"
-          />
+          <CardHeader title="Wes Bos' 30 Day JavaScript Challenge" />
           <CardContent>
             <CardMedia image={soloScreen} />
           </CardContent>
