@@ -53,7 +53,7 @@ class ContactPage extends Component {
     });
     Swal.fire({
       title: 'Contact Information Sent!',
-      text: 'You will be contacted as soon as possible!',
+      text: 'Thank you! You will be contacted as soon as possible!',
       icon: 'success',
     });
     this.props.history.push('/home');
