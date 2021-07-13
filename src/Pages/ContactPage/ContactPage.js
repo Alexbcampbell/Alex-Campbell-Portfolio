@@ -52,7 +52,7 @@ class ContactPage extends Component {
       },
     });
     Swal.fire({
-      title: 'Contact Information Sent!',
+      title: 'Contact Information Sent',
       text: 'Thank you! You will be contacted as soon as possible!',
       icon: 'success',
     });
