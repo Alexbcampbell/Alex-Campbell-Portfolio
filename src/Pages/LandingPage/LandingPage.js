@@ -15,8 +15,8 @@ class LandingPage extends Component {
         <div className="item-bio">
           <p>
             {' '}
-            Full Stack Software Engineer | Learning to code for a better
-            tomorrow.
+            Application Support Developer @ Prodjex | Coding for a better 
+            tomorrow
           </p>
         </div>
         <div className="item">
