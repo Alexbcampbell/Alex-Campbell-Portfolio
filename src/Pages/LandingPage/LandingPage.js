@@ -20,6 +20,9 @@ class LandingPage extends Component {
           </p>
         </div>
         <div className="item">
+        <div>
+            <a href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">Resume</a>
+          </div>
           <div>
             <a href="https://www.linkedin.com/in/alexb-campbell/">LinkedIn</a>
           </div>
