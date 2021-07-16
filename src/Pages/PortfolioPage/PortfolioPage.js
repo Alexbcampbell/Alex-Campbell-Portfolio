@@ -28,6 +28,23 @@ class PortfolioPage extends Component {
     });
   }
 
+  panels = document.querySelectorAll('.panel');
+
+    onSubmit = (input) => (e) => { 
+      console.log('Hello');
+      this.classList.toggle('open');
+    }
+
+    toggleActive = (input) => (e) => {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    // panels.forEach(panel => panel.addEventListener('click', onSubmit));
+    // panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
   render() {
     const { project } = this.props;
     // const projectArray = this.props.store.portfolioReducer.map(
@@ -45,29 +62,35 @@ class PortfolioPage extends Component {
     //   }
     // );
     return (
+      
       <div className="container-portfolio">
-        <Card className="card">
+        <div class="panels">
+    <div class="panel panel1" onSubmit>
+    <Card className="card">
           <CardHeader title="Covid Restaurant Reviews" />
           <CardContent>
             <CardMedia image={soloScreen} />
           </CardContent>
         </Card>
-        <Card className="card">
+    </div>
+    <div class="panel panel2" onSubmit>
+    <Card className="card">
           <CardHeader title="WeVolunteerKC" />
           <CardContent>
             <CardMedia image={soloScreen} />
           </CardContent>
         </Card>
-        <Card className="card">
+    </div>
+    <div class="panel panel3" onSubmit>
+    <Card className="card">
           <CardHeader title="Wes Bos' 30 Day JavaScript Challenge" />
           <CardContent>
             <CardMedia image={soloScreen} />
           </CardContent>
         </Card>
-        {/* <Grid container spacing={3}>
-          {projectArray}
-        </Grid> */}
-      </div>
+    </div>
+  </div>
+  </div>
     );
   }
 }
