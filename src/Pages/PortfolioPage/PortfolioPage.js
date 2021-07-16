@@ -21,6 +21,29 @@ const soloScreen = require('./soloScreenHome.png');
 // the component name TemplateClass with the name for the new
 // component.
 class PortfolioPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
+        {this.classList.toggle('open')};
+      </button>
+    );
+  }
+
   componentDidMount() {
     this.props.dispatch({
       type: 'GET_PROJECT',
@@ -65,7 +88,7 @@ class PortfolioPage extends Component {
       
       <div className="container-portfolio">
         <div class="panels">
-    <div class="panel panel1" onSubmit>
+    <div class="panel panel1" onClick ={this.handleClick}>
     <Card className="card">
           <CardHeader title="Covid Restaurant Reviews" />
           <CardContent>
