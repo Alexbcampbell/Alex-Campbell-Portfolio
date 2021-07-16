@@ -30,6 +30,7 @@ class PortfolioPage extends Component {
   }
 
   handleClick() {
+    console.log('help')
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
@@ -89,28 +90,19 @@ class PortfolioPage extends Component {
       <div className="container-portfolio">
         <div class="panels">
     <div class="panel panel1" onClick ={this.handleClick}>
-    <Card className="card">
-          <CardHeader title="Covid Restaurant Reviews" />
-          <CardContent>
-            <CardMedia image={soloScreen} />
-          </CardContent>
-        </Card>
+      <p></p>
+    <p>Covid <br></br>Restaurant<br></br> Reviews</p>
+    <p></p>
     </div>
     <div class="panel panel2" onSubmit>
-    <Card className="card">
-          <CardHeader title="WeVolunteerKC" />
-          <CardContent>
-            <CardMedia image={soloScreen} />
-          </CardContent>
-        </Card>
+    <p>WeCodeKC</p>
+    <p></p>
+    <p></p>
     </div>
     <div class="panel panel3" onSubmit>
-    <Card className="card">
-          <CardHeader title="Wes Bos' 30 Day JavaScript Challenge" />
-          <CardContent>
-            <CardMedia image={soloScreen} />
-          </CardContent>
-        </Card>
+    <p>Wes Bos's</p>
+    <p>30-Day</p>
+    <p>Javascript Challenge</p>
     </div>
   </div>
   </div>
