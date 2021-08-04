@@ -24,9 +24,9 @@ class PortfolioPage extends Component {
   constructor(props) {
     super(props);
     this.state = {isToggleOn: true};
-
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
+    this.toggle = this.classList.toggle('open');
   }
 
   handleClick() {
@@ -34,6 +34,7 @@ class PortfolioPage extends Component {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
+    this.classList.toggle('open');
   }
 
   render() {
@@ -89,17 +90,17 @@ class PortfolioPage extends Component {
       
       <div className="container-portfolio">
         <div class="panels">
-    <div class="panel panel1" onClick ={this.handleClick}>
+    <div className="panel panel1" onClick ={this.handleClick}>
       <p></p>
     <p>Covid <br></br>Restaurant<br></br> Reviews</p>
     <p></p>
     </div>
-    <div class="panel panel2" onSubmit>
+    <div className="panel panel2" onSubmit>
     <p>WeCodeKC</p>
     <p></p>
     <p></p>
     </div>
-    <div class="panel panel3" onSubmit>
+    <div className="panel panel3" onSubmit>
     <p>Wes Bos's</p>
     <p>30-Day</p>
     <p>Javascript Challenge</p>
