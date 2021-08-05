@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+import {
+  Button,
+} from '@material-ui/core';
 
 import './LandingPage.css';
 const alexPic = require('./alex1_bw.png');
@@ -21,16 +24,28 @@ class LandingPage extends Component {
         </div>
         <div className="item">
         <div>
-            <a href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">Resume</a>
+          <Button size="medium" variant="outlined" color="primary" href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">
+            Resume
+          </Button>
+            {/* <a href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">Resume</a> */}
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/alexb-campbell/">LinkedIn</a>
+          <Button size="medium" variant="outlined" color="primary" href="https://www.linkedin.com/in/alexb-campbell/">
+            LinkedIn
+          </Button>
+            {/* <a href="https://www.linkedin.com/in/alexb-campbell/">LinkedIn</a> */}
           </div>
           <div>
-            <a href="https://github.com/Alexbcampbell">Github</a>
+          <Button size="medium" variant="outlined" color="primary" href="https://github.com/Alexbcampbell">
+            Github
+          </Button>
+            {/* <a href="https://github.com/Alexbcampbell">Github</a> */}
           </div>
           <div>
-            <a href="alexbe.campbell@gmail.com">E-mail</a>
+          <Button size="medium" variant="outlined" color="primary" href="alexbe.campbell@gmail.com">
+          E-mail
+          </Button>
+            {/* <a href="alexbe.campbell@gmail.com">E-mail</a> */}
           </div>
           <div>
             <span>913-710-9196</span>
