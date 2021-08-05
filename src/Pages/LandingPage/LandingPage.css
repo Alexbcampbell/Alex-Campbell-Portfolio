@@ -10,8 +10,8 @@ body {
 }
 
 .profile {
-  opacity: 0.9;
-  border-radius: 8px;
+  opacity: .92;
+  border-radius: 15px;
 }
 
 .item-bio {
@@ -20,8 +20,8 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 350px 350px;
-  grid-template-rows: 350px 350px;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 400px 400px;
   grid-gap: 20px;
 }
 
