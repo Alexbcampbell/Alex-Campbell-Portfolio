@@ -24,25 +24,25 @@ class LandingPage extends Component {
         </div>
         <div className="item">
         <div>
-          <Button size="medium" variant="outlined" color="primary" href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">
+          <Button size="medium"  color="primary" href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">
             Resume
           </Button>
             {/* <a href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">Resume</a> */}
           </div>
           <div>
-          <Button size="medium" variant="outlined" color="primary" href="https://www.linkedin.com/in/alexb-campbell/">
+          <Button size="medium"  color="primary" href="https://www.linkedin.com/in/alexb-campbell/">
             LinkedIn
           </Button>
             {/* <a href="https://www.linkedin.com/in/alexb-campbell/">LinkedIn</a> */}
           </div>
           <div>
-          <Button size="medium" variant="outlined" color="primary" href="https://github.com/Alexbcampbell">
+          <Button size="medium"  color="primary" href="https://github.com/Alexbcampbell">
             Github
           </Button>
             {/* <a href="https://github.com/Alexbcampbell">Github</a> */}
           </div>
           <div>
-          <Button size="medium" variant="outlined" color="primary" href="alexbe.campbell@gmail.com">
+          <Button size="medium"  color="primary" href="alexbe.campbell@gmail.com">
           E-mail
           </Button>
             {/* <a href="alexbe.campbell@gmail.com">E-mail</a> */}
