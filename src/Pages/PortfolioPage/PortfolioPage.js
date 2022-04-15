@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
-import {
-  Card,
-  CardMedia,
-  CardActions,
-  CardContent,
-  Button,
-  Grid,
-  CardHeader,
-  Avatar,
-} from '@material-ui/core';
+// import {
+//   Card,
+//   CardMedia,
+//   CardActions,
+//   CardContent,
+//   Button,
+//   Grid,
+//   CardHeader,
+//   Avatar,
+// } from '@material-ui/core';
 
 import './PortfolioPage.css';
-import ProjectListItem from '../../components/ProjectListItem/ProjectListItem';
+// import ProjectListItem from '../../components/ProjectListItem/ProjectListItem';
 const soloScreen = require('./soloScreenHome.png');
 
 // Basic class component structure for React with default state
@@ -21,30 +21,30 @@ const soloScreen = require('./soloScreenHome.png');
 // the component name TemplateClass with the name for the new
 // component.
 class PortfolioPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {isToggleOn: true};
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
-    this.toggle = this.classList.toggle('open');
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {isToggleOn: true};
+  //   // This binding is necessary to make `this` work in the callback
+  //   this.handleClick = this.handleClick.bind(this);
+  //   this.toggle = this.classList.toggle('open');
+  // }
 
-  handleClick() {
-    console.log('help')
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }));
-    this.classList.toggle('open');
-  }
+  // handleClick() {
+  //   console.log('help')
+  //   this.setState(prevState => ({
+  //     isToggleOn: !prevState.isToggleOn
+  //   }));
+  //   this.classList.toggle('open');
+  // }
 
-  render() {
-    return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
-        {this.classList.toggle('open')};
-      </button>
-    );
-  }
+  // render() {
+  //   return (
+  //     <button onClick={this.handleClick}>
+  //       {this.state.isToggleOn ? 'ON' : 'OFF'}
+  //       {this.classList.toggle('open')};
+  //     </button>
+  //   );
+  // }
 
   componentDidMount() {
     this.props.dispatch({
@@ -96,14 +96,14 @@ class PortfolioPage extends Component {
     <p></p>
     </div>
     <div className="panel panel2" onSubmit>
-    <p>WeCodeKC</p>
     <p></p>
+    <p>WeCodeKC</p>
     <p></p>
     </div>
     <div className="panel panel3" onSubmit>
-    <p>Wes Bos's</p>
-    <p>30-Day</p>
-    <p>Javascript Challenge</p>
+    <p></p>
+    <p>30 Day<br></br>JavaScript<br></br> Challenge</p>
+    <p></p>
     </div>
   </div>
   </div>
