@@ -17,10 +17,14 @@ class LandingPage extends Component {
         </div>
         <div className="item-bio">
           <p>
-            {' '}
-            Application Support Developer @ Prodjex | Coding for a better 
-            tomorrow
           </p>
+        </div>
+        <div>
+          <section>
+            <h2>Alex Campbell</h2>
+            <p>Director of Product Support @ Prodjex | Learning to code for a better 
+            tomorrow</p>
+          </section>
         </div>
         <div className="item">
         <div>
