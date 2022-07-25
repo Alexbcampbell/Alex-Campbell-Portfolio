@@ -28,25 +28,25 @@ class LandingPage extends Component {
         </div>
         <div className="item">
         <div>
-          <a size="medium" content="resume button" color="primary" href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing"
+          <button  content="resume button"  href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing"
             Resume
           />
             {/* <a href="https://docs.google.com/document/d/1iMtxe9IJxU7W9o9JqHkZgI5v7A6tl7Qe5QnJT2DJu9U/edit?usp=sharing">Resume</a> */}
           </div>
           <div>
-          <a size="medium"  color="primary" href="https://www.linkedin.com/in/alexb-campbell/"
+          <button href="https://www.linkedin.com/in/alexb-campbell/"
             LinkedIn
           />
             {/* <a href="https://www.linkedin.com/in/alexb-campbell/">LinkedIn</a> */}
           </div>
           <div>
-          <a size="medium"  color="primary" href="https://github.com/Alexbcampbell"
+          <button href="https://github.com/Alexbcampbell"
             Github
           />
             {/* <a href="https://github.com/Alexbcampbell">Github</a> */}
           </div>
           <div>
-          <a size="medium"  color="primary" href="alexbe.campbell@gmail.com"
+          <button href="alexbe.campbell@gmail.com"
           E-mail
           />
             {/* <a href="alexbe.campbell@gmail.com">E-mail</a> */}
